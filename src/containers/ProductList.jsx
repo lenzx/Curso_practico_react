@@ -2,7 +2,7 @@ import React from 'react';
 import ProductItem from '../components/ProductItem';
 import '../styles/ProductList.scss';
 import useGetProduct from '../hooks/useGetProduct';
-const API = 'http://api.escuelajs.co/api/v1/products'
+const API = 'https://api.escuelajs.co/api/v1/products'
 
 const ProductList = () => {
 	const products = useGetProduct(API)

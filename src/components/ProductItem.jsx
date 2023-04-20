@@ -7,6 +7,7 @@ const ProductItem = ({product}) => {
 	const {addToCart} = useContext(AppContext)
 	const handleCart = (item) => {
 		addToCart([item]);
+		console.log(addToCart([item]))
 	}
 	return (
 		<div className="ProductItem">

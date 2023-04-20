@@ -7,8 +7,7 @@ const MyOrder = () => {
 	const {state} = useContext(AppContext);
 	const sumaTotal = () => {
 		const reducer = (accumulator,currentValue) => accumulator + currentValue[0].price;
-		const sum = state.cart.reduce(reducer,0);
-		console.log(state.cart)
+		const sum = state.cart.reduce(reducer,0);	
 		return sum;
 	}
 	
